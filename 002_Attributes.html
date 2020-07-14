@@ -1,0 +1,66 @@
+<!--
+1.
+HTML Attributes:
+----------------
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>ATTRIBUTES</title>
+    </head>
+    <body>
+
+        <h2 title="I'm a heading">The href Attribute</h2>
+
+        <p style="color:red;">HTML links are defined with the a tag. The link address is specified in the href attribute:</p>
+
+        <a href="https://www.google.com">Visit Google</a>
+
+        <img src="google.png" alt="Google" width="200" height="100">
+
+    </body>
+</html>
+
+
+<!--
+2.
+- The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
+- The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed
+- The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels)
+- The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.
+- The style attribute is used to add styles to an element, such as color, font, size, and more.
+- You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers. Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.The following example specifies English as the language and United States as the country
+- The title attribute defines some extra information about an element. The value of the title attribute will be displayed as a tooltip when you mouse over the element
+-->
+
+
+<!--
+3.
+We Suggest: Always Use Lowercase Attributes:
+--------------------------------------------
+The HTML standard does not require lowercase attribute names.
+The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.
+However, W3C recommends lowercase attributes in HTML, and demands lowercase attributes for stricter document types like XHTML.
+-->
+
+
+<!--
+4.
+We Suggest: Always Quote Attribute Values:
+------------------------------------------
+The HTML standard does not require quotes around attribute values.
+However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+GOOD :
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+BAD:
+<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+-->
