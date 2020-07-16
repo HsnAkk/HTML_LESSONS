@@ -1,0 +1,109 @@
+<!--
+The <table> tag defines an HTML table.
+
+Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. Each table data/cell is defined with a <td> tag.
+
+By default, the text in <th> elements are bold and centered.
+
+By default, the text in <td> elements are regular and left-aligned.
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TABLES</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+            }
+            th {
+                text-align: left;
+                color: white;
+                background-color: black;
+            }
+            td {
+                text-align: center;
+            }
+            tr:nth-child(even) {
+                background-color: #eee;
+            }
+            tr:nth-child(odd) {
+                background-color: #fff;
+            }
+            tr:last-child {
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+
+        <table>
+            <caption>Name List</caption>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+                <th>Telephone</th>
+                <th colspan="2">Languages</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>55578654</td>
+                <td>English</td>
+                <td>Spanish</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>55598765</td>
+                <td colspan="2">English</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+                <td>55523476</td>
+                <td colspan="2">German</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Bill</td>
+                <td rowspan="2">Smith</td>
+                <td rowspan="2">65</td>
+                <td>55523476</td>
+                <td rowspan="2">English</td>
+                <td rowspan="2">German</td>
+            </tr>
+            <tr>
+                <td>55523476</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+<!--
+NOTE: The <td> elements are the data containers of the table.
+      They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+
+      To let the borders collapse into one border, add the CSS border-collapse property:
+
+      Cell padding specifies the space between the cell content and its borders.
+      If you do not specify a padding, the table cells will be displayed without padding.
+      To set the padding, use the CSS padding property:
+
+      To make a cell span more than one column, use the colspan attribute:
+
+      To make a cell span more than one row, use the rowspan attribute:
+
+      To add a caption to a table, use the <caption> tag:
+      NOTE: The <caption> tag must be inserted immediately after the <table> tag.
+-->
