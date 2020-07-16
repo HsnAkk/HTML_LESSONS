@@ -1,0 +1,50 @@
+<!--
+HTML Images Syntax:
+-------------------
+The HTML <img> tag is used to embed an image in a web page.
+Images are not technically inserted into a web page; images are linked to web pages. 
+The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+    - src - Specifies the path to the image
+    - alt - Specifies an alternate text for the image
+
+    <img src="url" alt="alternatetext">
+
+Alternatively, you can use the width and height attributes:
+The width and height attributes always define the width and height of the image in pixels.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>IMAGES</title>
+        <style>
+            img {
+              width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="img_girl.jpg" alt="Girl in a jacket-1" style="width:300px;height:400px;">
+        <img src="programming.gif" alt="Computer man" style="width:100px;height:100px;">
+        <img src="programming.gif" alt="Computer man" style="width:100px;height:100px;">
+        <img src="img_girl.jpg" alt="Girl in a jacket-1" width="300px" height="400px">
+        <img src="img_girl.jpg" alt="Girl in a jacket-2">
+    </body>
+</html>
+
+
+<!-- 
+    The second image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%. 
+-->
+
+<!--
+importance of inline style ---!!!!!
+
+img tag as inline-block ---!!!!!!
+-->
