@@ -1,0 +1,193 @@
+<!--
+Semantic Elements in HTML:
+--------------------------
+Below is a list of some of the semantic elements in HTML.
+
+    <article>	Defines independent, self-contained content
+    <aside>	    Defines content aside from the page content
+    <details>	Defines additional details that the user can view or hide
+    <figcaption>	Defines a caption for a <figure> element
+    <figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+    <footer>	Defines a footer for a document or section
+    <header>	Specifies a header for a document or section
+    <main>	    Specifies the main content of a document
+    <mark>	    Defines marked/highlighted text
+    <nav>	    Defines navigation links
+    <section>	Defines a section in a document
+    <summary>	Defines a visible heading for a <details> element
+    <time>	    Defines a date/time
+-->
+
+<!--
+What are Semantic Elements?
+---------------------------
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML SEMANTIC TAGS</title>
+    </head>
+    <body>
+
+        <section>
+            <h1>WWF</h1>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+
+        <section>
+            <h1>WWF's Panda symbol</h1>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+        </section>
+
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+            
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+            
+        <article>
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+
+        <hr>
+
+        <details>
+            <summary>Epcot Center</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+
+        <details>
+            <summary>Epcot Center</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+
+        <hr>
+
+        <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+        <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+    </body>
+</html>
+
+
+<!--
+HTML <section> Element:
+-----------------------
+The <section> element defines a section in a document.
+According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+A web page could normally be split into sections for introduction, content, and contact information.
+-->
+
+<!--
+HTML <article> Element:
+-----------------------
+The <article> element specifies independent, self-contained content.
+An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+Examples of where an <article> element can be used:
+
+Forum post
+Blog post
+Newspaper article
+-->
+
+<!--
+Nesting <article> in <section> or Vice Versa?:
+----------------------------------------------
+The <article> element specifies independent, self-contained content.
+The <section> element defines section in a document.
+
+Can we use the definitions to decide how to nest those elements? No, we cannot!
+
+So, you will find HTML pages with <section> elements containing <article> elements, and <article> elements containing <section> elements.
+-->
+
+<!--
+HTML <header> Element:
+----------------------
+The <header> element represents a container for introductory content or a set of navigational links.
+
+A <header> element typically contains:
+
+one or more heading elements (<h1> - <h6>)
+logo or icon
+authorship information
+
+NOTE: You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element.
+-->
+
+
+<!--
+HTML <footer> Element:
+----------------------
+The <footer> element defines a footer for a document or section.
+
+A <footer> element typically contains:
+
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+You can have several <footer> elements in one document.
+-->
+
+
+<!--
+HTML <nav> Element:
+-------------------
+The <nav> element defines a set of navigation links.
+
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+-->
+
+
+<!--
+HTML <aside> Element:
+---------------------
+The <aside> element defines some content aside from the content it is placed in (like a sidebar).
+
+The <aside> content should be indirectly related to the surrounding content.
+-->
+
+<!--
+HTML <figure> and <figcaption> Elements:
+----------------------------------------
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or last child of the <figure> element.
+-->
+
+
+<!--
+Definition and Usage of <summary> :
+-----------------------------------
+The <summary> tag defines a visible heading for the <details> element. 
+The heading can be clicked to view/hide the details.
+
+Note: The <summary> element should be the first child element of the <details> element.
+-->
+
+
+<!--
+Definition and Usage of <time> :
+--------------------------------
+The <time> tag defines a specific time (or datetime).
+
+The "datetime" attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.
+-->
