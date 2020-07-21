@@ -1,0 +1,109 @@
+<!--
+HTML Entities:
+--------------
+Some characters are reserved in HTML.
+
+If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+Character entities are used to display reserved characters in HTML.
+
+A character entity looks like this:
+    &entity_name;
+        OR
+    &#entity_number;
+
+NOTE :  Advantage of using an entity name: An entity name is easy to remember.
+        Disadvantage of using an entity name: Browsers may not support all entity names, but the support for entity numbers is good.
+
+
+	non-breaking space	    &nbsp;	    &#160;
+<	less than	            &lt;	    &#60;
+>	greater than	        &gt;	    &#62;
+&	ampersand	            &amp;	    &#38;
+"	double quotation mark	&quot;	    &#34;
+'	single quotation mark 	&apos;	    &#39;
+¢	cent	                &cent;	    &#162;
+£	pound	                &pound;	    &#163;
+¥	yen	                    &yen;	    &#165;
+€	euro	                &euro;	    &#8364;
+©	copyright	            &copy;	    &#169;
+®	registered trademark	&reg;	    &#174;
+-->
+
+
+<!--
+NOTE: Entity names are case sensitive.
+-->
+
+
+<!--
+HTML Symbol Entities:
+---------------------
+HTML entities were described in the previous chapter.
+
+Many mathematical, technical, and currency symbols, are not present on a normal keyboard.
+To add such symbols to an HTML page, you can use an HTML entity name.
+
+If no entity name exists, you can use an entity number, a decimal, or hexadecimal reference.
+-->
+
+<!--
+What are Emojis?:
+-----------------
+Emojis look like images, or icons, but they are not.
+
+They are letters (characters) from the UTF-8 (Unicode) character set.
+
+UTF-8 covers almost all of the characters and symbols in the world.
+
+The HTML charset Attribute:
+---------------------------
+To display an HTML page correctly, a web browser must know the character set used in the page.
+
+This is specified in the <meta> tag:
+    <meta charset="UTF-8">
+
+
+What is Character Encoding?:
+-----------------------------
+To display an HTML page correctly, a web browser must know which character set to use.
+
+ASCII was the first character encoding standard. ASCII defined 128 different characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < > .
+
+ISO-8859-1 was the default character set for HTML 4. This character set supported 256 different character codes. HTML 4 also supported UTF-8.
+
+ANSI (Windows-1252) was the original Windows character set. ANSI is identical to ISO-8859-1, except that ANSI has 32 extra characters.
+
+The default character set for HTML5 is UTF-8, which covers almost all of the characters and symbols in the world!
+-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>I will display &euro;</p>
+<p>I will display &#8364;</p>
+<p>I will display &#x20AC;</p>
+
+<h1>Sized Emojis</h1>
+
+<p style="font-size:48px">
+&#128512; &#128516; &#128525; &#128151;
+</p>
+
+<hr>
+<p>I will display A B C</p>
+<p>I will display &#65; &#66; &#67;</p>
+
+<hr>
+
+<p style="font-size:100px">&#129409;</p>
+<p>I will display &#129409;</p>
+<p>I will display &#x1F981;</p>
+</body>
+</html>
+
+
+<!--
+If you want any of these emojis displayed in HTML, you can use the decimal (dec) or hexadecimal (hex) reference found in the table.
+-->
